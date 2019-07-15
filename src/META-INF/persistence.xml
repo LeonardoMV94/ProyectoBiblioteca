@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="FastDevelopPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>cl.Entity.Telefonos</class>
+    <class>cl.Entity.EjemplarLibros</class>
+    <class>cl.Entity.Facturas</class>
+    <class>cl.Entity.MetodoPago</class>
+    <class>cl.Entity.Direcciones</class>
+    <class>cl.Entity.Trabajadores</class>
+    <class>cl.Entity.Clientes</class>
+    <class>cl.Entity.Correos</class>
+    <class>cl.Entity.Arriendos</class>
+    <class>cl.Entity.Distribuidores</class>
+    <class>cl.Entity.Libros</class>
+    <class>cl.Entity.Idiomas</class>
+    <class>cl.Entity.Estados</class>
+    <class>cl.Entity.Editoriales</class>
+    <class>cl.Entity.Categorias</class>
+    <class>cl.Entity.Autores</class>
+    <class>cl.Entity.Boletas</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/biblioteca?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="FastDevelopPU2" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/biblioteca?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
